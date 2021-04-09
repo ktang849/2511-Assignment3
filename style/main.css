@@ -1,0 +1,168 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+
+.button{
+    cursor: pointer;
+  }
+  
+:focus{
+    outline: 5px solid black;
+  }
+  
+  a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    background-color: white;
+}
+a.skip-main:focus {
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 0 35%;
+    padding: 5px;
+    font-size: 20px;
+    outline: 5px solid black;
+    text-align: center;
+    z-index: 999;
+}
+
+nav{
+    background-color: gainsboro;
+    overflow: hidden;
+   
+}
+
+nav a{
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 14px;
+}
+
+nav a.active{
+    background-color: gray;
+    color: white;
+}
+
+header,footer{
+    background-color: lightblue;
+    
+}
+
+#name{
+    border: solid black 2px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#profile{
+    border-radius: 50%;
+    width: 200px;
+    border: solid white 10px;
+    
+}
+
+.wrapper{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.wrapper div{
+    background-color: gainsboro;
+    padding: 1em;
+}
+#item0{
+    grid-column: 1/-1;
+}
+
+#item1{
+    grid-column: 2/4;
+}
+
+#item2{
+    grid-column: 2/4;
+}
+#item3{
+    grid-column: 2/4;
+}
+#item4{
+    grid-column: 2/4;
+
+}
+#item5{
+    grid-column: 2/4;
+
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+    #item2{
+        grid-column: 2/3;
+    }
+    #item3{
+        grid-column: 3/4;
+    }
+    #item4{
+        grid-column: 2/3;
+    }
+    #item5{
+        grid-column: 3/4;
+    }
+    
+  }
+
+  @media screen and (min-width: 1300px) {
+    .bigWrapper{
+      width: 700px;
+      margin:0 auto;
+      border: solid black 2em;
+    }
+  
+  
+  
+  }
+
+ul{
+    text-align: left;
+}
+
+.uline{
+    text-decoration: underline;
+    text-align: left;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.form{
+    background-color: lightblue;
+    text-align: center;
+}
+
+footer{
+    color: black;
+    font-size: 21px;
+    border: solid black 5px;
+}
+.icon{
+    width: 30px;
+}
+
+#profileicon{
+    width: 100px;
+}

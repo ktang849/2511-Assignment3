@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kaila Tang"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"content= "John Doe, Resume, Executive Director of Marketing, Jobs, recruit"/>
+    <meta name="description" content="A webpage for John Doe's Resume"/>
+    
+    <title>John Doe - Resume</title>
+    <link rel="reset sheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body class="bigWrapper">
+    <a class="skip-main" href="#home" > skip to main content</a>	
+      <Header tabindex="0" >
+          <nav>
+              <a  class="button" href="#home">Home</a>
+              <a  class="button" href="#contact">Contact</a>
+              <a  class="button" href="#item0">Introduction</a>
+          </nav>
+          <div id="name">
+              <div >
+                  <img id="profile"src="images/profile.jpg" alt="John Does profile picture" 
+                 title="John Doe"  >
+              </div>
+             <div >
+                <h1>John Doe</h1>
+                <h3>Executive Director of Marketing at Shell</h3>
+                <div id="list">
+                    <ul>
+                        <li>Email: johndoe657@gmail.com</li>
+                        <li>Cell Phone: (403) 777 - 0987</li>
+                        <li>Work Phone: (587) 012 - 5678</li>
+                    </ul>
+                </div>
+             </div>
+             
+          </div>
+
+      </Header>
+      <hr/>
+      
+      <section id="home"  class="wrapper">
+        <div id="item0">
+          <h2>Get To Know Me: </h2>
+          <hr/>
+          <video width="450" height="300" controls>
+            <source src="video/introSampleVId.mp4" type="video/mp4">
+            <source src="video/introSampleVId.ogg" type="video/ogg">
+            <track label="English" kind="subtitles" srclang="en" src="captions/vtt/sintel-en.vtt" default>
+            <track label="Deutsch" kind="subtitles" srclang="de" src="captions/vtt/sintel-de.vtt">
+            your browser does not support the video tag
+            
+
+          </video>
+        </div>
+          <div tabindex="0" id="item1">
+            
+              <h3>About Me</h3>
+              <hr/>
+              <p>My name is John Doe, and I enjoy meeting new people 
+                and finding ways to help them have an uplifting experience. 
+                I have had a variety of corporate opportunities, through 
+                which I was able to develop my managment skills, when compared with co-workers. I am dedicated,
+                outgoing, and a team player. Who could I speak with in your 
+                Human Resource department about your organization’s management
+                 needs?</p>
+                 <img id="profileicon"src="images/about1.png" alt="profile icon" 
+            title="profile icon"  >
+
+          </div>
+          <div tabindex="0"id="item2">
+            <img class="icon"src="images/skills.png" alt="pencil icon" 
+            title="pencil icon"  >
+              <h4>Skills</h4>
+              <hr/>
+              <p>
+                <ul>
+                    <li>Interpersonal</li>
+                    <li>Leadership</li>
+                    <li>Problem Solving</li>
+                    <li>Profficient in Excel</li>
+                    <li>Proficient in Microsoft word</li>
+
+                  </ul>
+              </p>
+
+          </div>
+          <div tabindex="0" id="item3">
+            <img class="icon"src="images/experience.png" alt="city icon" 
+            title="city icon"  >
+              <h4>Experience</h4>
+              <hr/>
+              <article>
+                  <p class="uline">HR Administration & Compliance</p>
+                  <p>
+                      <ul>
+                          <li>Administered company benefits</li>
+                          <li>Maintain Compliance of employee personnel</li>
+                      </ul>
+                  </p>
+                  <p class="uline">Head of communications</p>
+                  <p>
+                      <ul>
+                          <li>Establishes strategy for North America</li>
+                          <li>Supported trading net spanning</li>
+                      </ul>
+                  </p>
+              </article>
+
+          </div>
+          <div tabindex="0" id="item4">
+            <img class="icon"src="images/education.png" alt="graduation cap icon" 
+            title="graduation cap"  >
+              <h4>Education</h4>
+              <hr/>
+              <article>
+                <p class="bold">Bachelor of Computer Information Systems</p>
+                <p>
+                    Mount Royal University, Calgary AB
+                </p>
+                <p class="bold">Highschool Diploma</p>
+                <p>
+                   Browns Highschool, Calgary AB
+                </p>
+            </article>
+              
+          </div>
+          <div tabindex="0" id="item5">
+            <img class="icon"src="images/references.png" alt="phone icon" 
+            title="phone icon"  >
+              <h4>References</h4>
+              <hr/>
+              <p >Previous Employer : Jane Doe</p>
+              <p>
+                <ul>
+                    <li>Phone Number: (403) 549 - 8899</li>
+                    <li>Email:        janedoe45@gmail.com</li>
+                </ul>
+             </p>
+             <p >Previous Co-worker : Nick Smith</p>
+              <p>
+                <ul>
+                    <li>Phone Number: (403) 555 - 8199</li>
+                    <li>Email:        nicksmith5@gmail.com</li>
+                </ul>
+             </p>
+
+          </div>
+
+      </section>
+      <br/>
+      <hr/>
+      <hr/>
+      <br/>
+      <section class="form" id="contact">
+        <form method="GET" name="Contact-Us" action="submitted.html">
+         <fieldset>
+           <legend>Contact Me For Business Inquiries : </legend>
+           <section>
+               <p>
+                   <label class="button">
+                       Name:
+                       <input type="text" name="fullname">
+                   </label>
+               </p>
+               <p>
+                   <label class="button">
+                       Telephone:
+                       <input type="tel" name="Telephone" placeholder="403-111-1111" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}">
+                   </label>
+               </p>
+               <p>
+                   <label class="button">
+                       Email:
+                       <input type="email" name="email" maxlength="20" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                   </label>
+               </p>
+               <p>
+                 <label class="button" for="Comments">Comments:</label>
+ 
+                 <textarea id="Comments" name="Comments" rows="4" cols="50">
+                 
+                 </textarea>
+               </p>
+ 
+           </section>
+
+           <p  id="buttons">
+               <input class="button" type="submit" value="submit">
+               <input class="button" type="reset" value="clear">
+           </p>
+          
+       </fieldset>
+       
+        </form>
+      </section>
+      <br/>
+      <footer tabindex="0">
+        <p><em>Thank you for viewing my resume. I look forward to hearing from you</em></p>
+
+      </footer>
+  </body>
+</html>
